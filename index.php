@@ -54,7 +54,7 @@ if ($_GET['apikey'] == "enter new key here please") {
         //Construct the Startpage array    
         while($obj = mysqli_fetch_array($rs)) {
           $info = array(
-                "id" => $obj['id'], "title" => utf8_encode($obj['title']), "course" => utf8_encode($obj['course']), "image_url" => utf8_encode($obj['image_url']), "on_link" => utf8_encode($obj['on_link']), "row" => $obj['row'], "position" => $obj['position']
+                "id" => $obj['id'], "title" => utf8_encode($obj['title']), "course" => utf8_encode($obj['course']), "image_url" => utf8_encode($obj['image_url']), "on_link" => utf8_encode($obj['on_link']), "row" => $obj['row'], "position" => $obj['position'],"description" => utf8_encode($obj['content'])
 
         );
          array_push($response["courses-slider"], $info);
