@@ -1,2 +1,2 @@
-# WP-STARTPAGE-API
+# WP-CENTRAL-OTO-API
 The PHP and MySQL API for ETER iOS application
